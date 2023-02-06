@@ -268,7 +268,7 @@ html {
 
     &__center {
         display: flex;
-
+        align-items: center;
     }
 
     &__image {
@@ -322,10 +322,8 @@ html {
         }
 
         .price__can {
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 700;
-            font-style: italic;
-            color: #f8f8f8;
+            font-family: 'Rubik Dirt';
+            color: yellow;
         }
     }
 
