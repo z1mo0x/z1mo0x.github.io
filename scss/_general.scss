@@ -11,6 +11,7 @@ html {
 }
 
 .header {
+
     display: flex;
     height: 10vh;
     justify-content: space-around;
@@ -21,6 +22,11 @@ html {
     background: rgba(241, 122, 111, .1);
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
+
+
+    &__burger {
+        display: none;
+    }
 
     &__contacts {
         a {
@@ -78,27 +84,30 @@ html {
             transition: all .5s;
             position: relative;
 
+
+
+            li {
+                list-style: none;
+                font-size: 25px;
+                margin: 20px;
+            }
+
             &::after {
                 content: '';
                 position: absolute;
                 top: 80%;
-                left: 20px;
+                left: 0;
                 width: 0%;
                 height: 2px;
                 background: white;
                 transition: all .5s;
             }
 
-            li {
-                list-style: none;
-                font-size: 25px;
-                padding: 20px;
-            }
-
             &:hover::after {
-                width: 70%;
+                width: 100%;
                 transition: all .5s;
             }
+
 
             &:hover {
                 font-size: 28px;
@@ -153,7 +162,13 @@ html {
         img {
             height: 700px;
             border-radius: 10%;
-            filter: opacity(.9);
+            transition: all .5s;
+            filter: opacity(.9)grayscale(1);
+
+            &:hover {
+                transition: all .5s;
+                filter: opacity(.9)grayscale(0);
+            }
         }
     }
 
