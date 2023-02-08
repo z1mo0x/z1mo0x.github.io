@@ -184,6 +184,12 @@ html {
         font-weight: 500;
         padding: 20px;
 
+        br {
+            display: block;
+            content: "";
+            margin-top: 15px;
+        }
+
         span {
             color: white;
         }
