@@ -930,23 +930,24 @@
     }
 
     .active_burger {
+
         span {
             background: white;
             transition: all .5s;
 
             &:nth-child(2) {
                 transition: all .5s;
-                display: none;
+                transform: scale(0);
             }
 
             &:nth-child(3) {
                 transition: all .5s;
-                transform: rotate(-45deg) translate(4px);
+                transform: rotate(-45deg) translate(8px);
             }
 
             &:first-child {
                 transition: all .5s;
-                transform: rotate(45deg) translate(4px);
+                transform: rotate(45deg) translate(8px);
             }
         }
     }
