@@ -1,13 +1,7 @@
-const priceAttemtion = document.querySelector('.price__attemption');
 const burger = document.querySelector('.header__burger');
 const list = document.querySelector('.header__list');
 const html = document.documentElement;
 const body = document.body;
-
-priceAttemtion.addEventListener('click', () => {
-    priceAttemtion.classList.add('deleted')
-});
-
 
 burger.addEventListener('click', () => {
     html.classList.toggle('scroll__off');
